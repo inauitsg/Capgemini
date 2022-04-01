@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <style>
+        div{
+            width: 300px;
+            margin: auto;
+            text-align: center;
+        }
+        input{
+            width:100%;
+            border-radius: 5px;
+            padding: 6px 3px 6px 3px;
+            margin-bottom: 5px;
+        }
+        button{
+            width:100%;
+            margin-bottom: 10px;
+        }
+        label{
+            width: 100%;
+            text-align: center;
+            color: red;
+            border-radius: 5px;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="nome"  placeholder="Informe nome"/>
+        <input type="text" id="sobrenome" placeholder="Informe sobrenome" />
+        <input type="number" id="idade" placeholder="Informe sua idade" />
+
+        <hr />
+        
+        <label id="nomeCompleto"></label>
+        
+        <button onclick="ola()">Mostrar mensagem</button>
+    </div>    
+
+<script>
+    function ola(){
+        var nome = document.getElementById("nome");
+        if(nome.value == ""){
+            document.getElementById("nomeCompleto").innerHTML = "Informe nome";
+            nome.focus();
+            return;   
+        }
+        var sobrenome = document.getElementById("sobrenome").value;
+        if (sobrenome == ""){
+            document.getElementById("nomeCompleto").innerHTML = "Informe sobrenome";
+            document.getElementById("sobrenome").focus;
+            return;
+        }
+        var idade = document.getElementById ("idade").value
+        var msg = nome.value + " " + sobrenome + " você tem " + idade + " anos, portanto vc é maior de idade";
+        if (idade < 18){
+            msg = nome.value + " " + sobrenome + " você tem " + idade + " anos, portanto vc é menor de idade";  
+        }
+        
+        document.getElementById("nomeCompleto").innerHTML = msg;
+
+        
+    }
+</script>
+    
+</body>
+</html>

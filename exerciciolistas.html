@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de listas</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        .container{
+            box-sizing: border-box;
+            width: 100%;
+            height: 5vh;
+            padding: 2px;
+            background-color: rgb(134, 130, 137);
+            
+        }
+        
+      .first{        
+         width: 40%;
+         border: 1px solid black;
+         background-color: rgb(251, 251, 152); 
+         display: inline-block;
+
+      }  
+
+      .second{
+         width: 40%;
+          border: 1px solid black;
+         background-color: rgb(119, 26, 206); 
+         display: inline-block;
+
+      }
+      .circle{
+        list-style-type:circle;
+      }
+      .square{
+        list-style-type:square;
+      }
+      .alg{
+        list-style-type:upper-roman;
+      }
+    </style>
+
+</head>
+
+<body>
+    <h1>Exercício 1: listas</h1>
+    <div class="container>"
+
+        <div class="first">
+        <div class="first">
+            <h2> Lista 1</h2>
+            <ul class="circle">
+                <li>Coffe</li>
+                <li>Tea</li>
+                <li>Coca cola</li>
+            </ul>
+            <ul class="square">
+                    <li>Coffe</li>
+                    <li>Tea</li>
+                    <li>Coca cola</li>
+                </ul>
+         </div>   
+
+        
+
+        <div class="second">
+            <h2>Lista 2</h2>
+            <ol class="num">
+                <li>Coffe</li>
+                <li>Tea</li>
+                <li>Coca cola</li>
+            </ol>
+            <ol class="alg">
+                    <li>Coffe</li>
+                    <li>Tea</li>
+                    <li>Coca cola</li>
+            </ol>
+            
+
+        </div>
+    </div>
+    
+</body>
+</html>
